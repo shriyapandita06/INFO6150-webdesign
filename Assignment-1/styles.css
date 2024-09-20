@@ -1,0 +1,661 @@
+/* General reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: white;
+    font-family: 'serif';
+}
+
+menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+menu ul li a:hover {
+    color: #ffba00; /* Hover color */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('index1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Serif';
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+
+
+/* Services Section Styling */
+.services-section {
+    padding: 100px 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.services-content h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+    font-family: 'Serif';
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures responsive layout on smaller screens */
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Set a consistent maximum width for each card */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px; /* Uniform height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+audio {
+    display: block;
+    margin: 30px auto 20px; 
+    width: 300px; /* Set width for the audio player */
+}
+
+/*about us*/
+.aboutus {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/bts.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.overlay-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.about-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Serif';
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    
+}
+
+.about-text h1 {
+    font-size: 25px;
+    line-height: 1.5;
+    
+    
+}
+
+
+/*contct us*/
+
+.contactus {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/contact.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between; /* Distribute left and right sections */
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* Style for the left contact text */
+.contact-left {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Serif';
+    width: 40%;
+}
+
+.contact-left h2 {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.contact-left a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffba00;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+.contact-left a:hover {
+    background-color: #ffba00;
+    color: #333;
+}
+
+/* Style for the form */
+.contact-form {
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group input {
+    height: 40px;
+}
+
+button {
+    background-color: #ffba00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.contactus {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/contact.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.overlay-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.contact-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Serif';
+    width: 40%;
+    
+}
+
+.contact-text h2 {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    
+}
+
+
+.contact-text a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffba00;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+.contact-text a:hover {
+    background-color: #ffba00;
+    color: #333;
+}
+
+
+
+
+/* Services Section Styling */
+.portfolio-section {
+    padding: 100px 50px;
+    background-color: #e5d380d4;
+    color: #333;
+}
+
+.portfolio-content h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+    font-family: 'Serif';
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures responsive layout on smaller screens */
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(237, 207, 160, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Set a consistent maximum width for each card */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px; /* Uniform height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.portfolio-item h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* Ensure that the footer doesn't interfere with the layout */
+footer {
+    margin-top: 50px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark footer background */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #ffba00; /* Hover color for links */
+}
+
+/* Grid Layout for Video and Images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Maintain square ratio */
+}
+
+.grid-item img, .grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*table*/
+.prices-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.prices-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Serif';
+}
+
+.content-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.content-table thead th {
+    background-color: #e8e3d065;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.content-table tbody td {
+    font-size: 1rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+
+.content-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody td:first-child {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.content-table tbody tr td {
+    text-align: center;
+}
+
+.content-table tbody td:last-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.content-table tbody tr td:nth-child(3) {
+    background-color: #ffe599;
+    font-weight: bold;
+}
+
+.content-table tbody tr td:nth-child(2) {
+    background-color: #d9e2f3;
+}
+
+.content-table tbody tr td:nth-child(1) {
+    background-color: #e2eafc;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(3, 0, 0);
+    text-decoration: none;
+    border-radius: 20px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #dfecaf96;
+}
+/*why us summary*/
+/* Style for the details section */
+details {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Style for the summary */
+summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    list-style: none;
+    text-align: center;
+}
+
+/* On hover or focus */
+summary:hover, summary:focus {
+    color: #ffcb05;
+   
+}
+
+/* Style for the content inside the details */
+details[open] p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* Optional animation to make the details open smoothly */
+details[open] {
+    transition: all 0.3s ease-in-out;
+}
+
+/* .citation ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;
+    color: #333; /* Change this to your desired color 
+}
+
+.citation ul li a {
+    color: #ffba00; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.citation ul li a:hover {
+    color: #333; 
+} */
+
+/* new */
+
+.citation {
+    position: relative;
+    z-index: 2; /* Ensure the citation is above the overlay */
+    color: white;
+}
+
+.citation-list {
+    list-style: none; /* Removes bullet points */
+    padding-left: 20px; /* Adds indentation to the list */
+    color: #fff; /* White color for the text */
+}
+
+.citation-list li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+.citation-list li a {
+    color: #ffba00; /* Gold color for links */
+    text-decoration: none; /* No underline */
+}
+
+.citation-list li a:hover {
+    color: #fff; /* White color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
