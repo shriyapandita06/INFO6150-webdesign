@@ -1,0 +1,485 @@
+/* General settings */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 20px 0;
+  color: #3498db;
+}
+
+p, li {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Container */
+.container, .container-gallery {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.float-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #2980b9;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+header i {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+audio {
+  margin-top: 20px;
+}
+
+
+/* Favicon and Image Styling */
+img.float-img {
+  border-radius: 50%;
+  border: 3px solid #2980b9;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu 
+menu {
+  display: flex;
+  justify-content: center;
+  background-color: #2c3e50;
+  padding: 15px 0;
+}
+
+menu li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+menu li a {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+menu li a:hover, menu li.active a {
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+} */
+
+menu {
+  display: flex;
+  justify-content: center;
+  background-color: #2c3e50;
+  padding: 15px 0;
+}
+
+menu li {
+  list-style-type: none;
+  flex-grow: 1; /* Each item will take equal width */
+  text-align: center; /* Center the text */
+}
+
+menu li a {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  display: block; /* Ensure the entire item is clickable */
+}
+
+menu li a:hover, menu li.active a {
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Section Layout */
+.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.three-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c2, .c3, .c4, .c5, .c6 {
+  flex: 1 1 calc(50% - 40px);
+  margin: 0 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+/* Skill List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ul li:hover {
+  background-color: #2980b9;
+  transition: background-color 0.3s ease;
+}
+
+/* Table Styling */
+table.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 1em;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.content-table thead tr {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+table.content-table th, table.content-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+table.content-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.content-table tbody tr:hover {
+  background-color: #dcdde1;
+  transition: background-color 0.3s ease;
+}
+
+/* Education Section Styling */
+.education-entry {
+  margin-bottom: 20px;
+}
+
+.institution {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.location {
+  text-align: left;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.degree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.degree span {
+  display: inline-block;
+}
+
+.date {
+  text-align: right;
+  font-size: 0.9em;
+  color: #666;
+}
+ 
+/* Form Styling */
+form {
+background-color: #ecf0f1;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+width: 100%; /* Ensure the form takes full width */
+box-sizing: border-box; /* Includes padding and border in the width calculation */
+max-width: 600px; /* Optional: Restrict the form width to avoid it becoming too wide */
+margin: 0 auto; /* Center the form */
+}
+
+input[type="text"], select, textarea {
+width: 100%; /* Make input fields responsive */
+padding: 12px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-family: inherit;
+box-sizing: border-box; /* Ensures that padding does not exceed container width */
+}
+
+input[type="submit"] {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 100%; /* Make the submit button full width */
+box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+background-color: #2980b9;
+transition: background-color 0.3s ease;
+}
+
+
+/* Video */
+video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Gallery */
+.gallery {
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+padding: 0;
+margin: 20px 0;
+}
+
+.gallery li {
+margin: 0 10px;
+}
+
+.gallery img {
+width: 180px; /* Adjust this width as needed */
+height: auto;
+display: block;
+}
+
+figcaption {
+margin-top: 10px;
+font-size: 1em;
+font-weight: bold;
+color: #333; /* Ensures visibility of the caption */
+text-align: center; /* Centers the text under the image */
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #2c3e50;
+color: white;
+margin-top: 40px;
+border-radius: 0 0 8px 8px;
+position: relative;
+}
+
+.scroll-top-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.scroll-top-icon:hover {
+  background-color: #2980b9;
+}
+
+
+/* Contact Icons */
+.icon-container {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+
+.icon {
+text-align: center;
+}
+
+.icon img {
+width: 60px;
+height: 60px;
+border: 2px solid #2980b9;
+border-radius: 50%;
+padding: 10px;
+transition: transform 0.3s ease;
+}
+
+.icon img:hover {
+transform: scale(1.1);
+}
+
+.icon p {
+margin-top: 10px;
+font-weight: bold;
+}
+
+.icon p a {
+color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.two-col, .three-col {
+  flex-direction: column;
+}
+
+.c2, .c3, .c4, .c5, .c6 {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+
+.icon-container {
+  flex-direction: column;
+}
+
+/* Gallery stacking for smaller screens */
+.gallery {
+    flex-direction: column; /* Stack the certificates vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery li {
+    margin-bottom: 20px;
+}
+
+img.float-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+}
+
+@media (max-width: 365px) {
+  /* Menu adjustments for small screens */
+  menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  menu li {
+    margin-bottom: 10px;
+  }
+
+  menu li a {
+    font-size: 0.9em;
+    padding: 8px 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Adjust font size for headings */
+  h1 {
+    font-size: 1.2em;
+  }
+
+  /* Adjust icon sizes */
+  .icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Gallery images resizing */
+  .gallery img {
+    width: 80px;
+  }
+}
