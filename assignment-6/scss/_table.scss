@@ -1,0 +1,19 @@
+@use 'config';
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+th {
+    padding: 15px;
+    background-color: config.$primary-color; 
+}
+
+tr {
+    background-color: config.$secondary-color;
+}
+
+td {
+    padding: 10px;
+}

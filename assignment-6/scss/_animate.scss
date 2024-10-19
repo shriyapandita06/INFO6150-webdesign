@@ -1,0 +1,43 @@
+.arrows {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.arrows img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+@function returnHalf($amount){
+    @return $distance/2;
+}
+
+@mixin animateBounce($name, $duration, $distance, $breakpoints) {
+
+    @keyframes #{$name} {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-#{$distance}px);
+        }
+
+        60% {
+            transform: translateY(-returnHalf($distance)px);
+        }
+    }
+
+    .#{$name} {
+        animation: #{$name} #{$duration}s infinite;
+    }
+
+}

@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #1C2541;
+    line-height: 1.5;
+}
+
+/* Header */
+.header {
+    background-color: #e1ab59;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Didot', serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #1C2541;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+    background-color: #e1ab59;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #1C2541;
+}
+
+/* Menu Buttons Section */
+.menu-buttons {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+/* .menu-btn {
+    background-color: #fff;
+    color: #1C2541;
+    border: 2px solid #1C2541;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #e1ab59;
+    color: #fff;
+} */
+
+.menu-btn span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Menu Highlights Section */
+.menu-highlights {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu-highlights h2 {
+    font-family: 'Didot', serif;
+    font-size: 28px;
+    color: #1C2541;
+    margin-bottom: 30px;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-item h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #1C2541;
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.highlight-item p {
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #e1ab59;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Menu Summary Section */
+.menu-summary {
+    text-align: center;
+    padding: 20px 20px;  /* Keep padding reduced */
+    margin-bottom: 0; /* Eliminate bottom margin to reduce space */
+}
+
+/* Menu Buttons Section */
+.menu-buttons {
+    padding: 20px 20px;  /* Reduce padding */
+    text-align: center;
+    margin-top: 10px;  /* Adjust top margin to reduce space further */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;  /* Reduce gap between buttons */
+}
+
+.menu-btn {
+    padding: 15px;  /* Adjust padding for button size */
+    width: 180px;  /* Slightly narrower button */
+    font-size: 14px;  /* Slightly smaller font size */
+    text-align: center;
+    border: 1px solid #1C2541;
+}
+
+.menu-btn:hover {
+    background-color: #e1ab59;
+    color: #fff;
+}

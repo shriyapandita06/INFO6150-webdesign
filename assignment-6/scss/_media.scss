@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .hamb {
+        display: none;
+    }
+
+}

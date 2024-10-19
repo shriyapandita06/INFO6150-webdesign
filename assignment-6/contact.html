@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATTE BAKERY CONTACT</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">TATTE BAKERY</a>
+
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a> </li>
+                <li><a href="menu.html">MENU</a> </li>
+                <li><a href="contact.html">CONTACT US</a> </li>
+                <li><button class="btn-secondary">SIGN IN</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+       
+        <img src="./images/croissant.jpg" alt="Coffee shop" height="600px" width="100%">
+        <h2>CONTACT US</h2>
+        <div id="content">
+            <!-- <p style="margin-top: 100px;"> -->
+            <p>
+                Thank you for your interest in Tatte Cafe and Bakery.
+            </p>
+            <p>
+                Need to get in touch? We’d love to hear from you! Visit our FAQ page if you feel your question may have been answered, or reach out below to our customer support team for further assistance. Our support hours are Monday-Friday, 8 am to 4 pm (Eastern). We’ll be in touch with you as soon as we can.
+            </p>
+            <p>
+                For all customer service & general inquiries please contact us below. One of our staff members will be in
+                contact you within 24 hours.
+            </p>
+        </div>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="button" onclick="myFunction()" value="Submit">
+                </div>
+                <script>
+                    function myFunction() {
+                        alert("Details successfully submitted!");
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tatte Bakery</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$light-color: #f4f4f4;
+$font-stack: 'Cursive', sans-serif;
+$primary-color: rgb(229, 220, 207);
+$tertiary: rgb(229, 220, 207);
+$secondary-color: rgb(229, 220, 207);
+$font-size: 20px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.5;
+
+}
+
+@function set-text-color($color) {
+    @if (lightness($color)>70) {
+        @return #1C2541;
+    } 
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);  
+}
