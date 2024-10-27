@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Title Styling */
+#main-label {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card Styling */
+.card, .result-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.result-card {
+  background-color: #e8f4fa; /* Slightly different color for result card */
+}
+
+/* Input Container Styling */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Label Styling */
+.input-label, #result-label {
+  font-size: 20px;
+  color: #555;
+  min-width: 110px; /* Ensures "Number 1:" fits in one line */
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin-right: 10px; /* Adds space between label and input */
+}
+
+/* Input Field Styling */
+.input-field {
+  flex: 1; /* Allows the input field to take up the remaining space */
+}
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Highlight on focus */
+}
+
+/* Button Styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  flex: 1;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  background-color: #003f7f; /* Even darker on click */
+  transform: translateY(1px);
+}
+
+/* Result Field Styling */
+#result {
+  font-size: 24px;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+  text-align: left;
+  display: none;
+}
+
+/* Additional Styling for Mobile Responsiveness */
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .input-label, #result-label {
+    font-size: 18px;
+  }
+
+  input[type="text"], button {
+    font-size: 16px;
+  }
+
+  #main-label {
+    font-size: 26px;
+  }
+}
