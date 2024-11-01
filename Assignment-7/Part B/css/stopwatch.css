@@ -1,0 +1,90 @@
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #e3f2fd;
+    border: 1px solid #b3cde0;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  #start-button, #stop-button, #reset-button {
+    background-color: #90caf9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #start-button:hover, #stop-button:hover, #reset-button:hover {
+    background-color: #64b5f6;
+  }
+  
+  #date-card, #time-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #date-picker {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #b3cde0;
+  }
+  
+  #time-display {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1e88e5;
+    margin-top: 10px;
+  }
+  
+  #button-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #90caf9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #64b5f6;
+  }
+  
+  #main-label {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 20px;
+  }
+  
