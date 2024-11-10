@@ -1,0 +1,34 @@
+###
+
+GET http://localhost:3000/user/getAll
+
+###
+
+POST http://localhost:3000/user/create
+Content-Type: application/json
+
+{
+    "name" : "Shriya Pandita",
+    "email" : "pandita.s@northeastern.edu",
+    "password": "Boston123@"
+}
+
+###
+
+PUT http://localhost:3000/user/edit?email=pandita.s@northeastern.edu
+Content-Type: application/json
+
+{
+    "name": "S",
+    "email": "shriya@north.edu"
+    "password" : "12345"
+}
+
+###
+
+DELETE http://localhost:3000/user/delete?email=wadhwa.ya@northeastern.edu
+
+###
+
+UploadImage POST http://localhost:3000/user/uploadImage?email=pandita.s@northeastern.edu
+Content-Type: Content-Type: multipart/form-data
