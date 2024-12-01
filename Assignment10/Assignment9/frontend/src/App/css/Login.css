@@ -1,0 +1,16 @@
+.card {
+    width: 100%;
+  }
+  
+  .card-header {
+    background-color: #C9B67A;
+    color: rgb(245, 245, 19);
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .Button {
+    border-color: #C9B67A;
+    background-color: #B6A367;
+    color: rgb(221, 225, 97);
+  }
